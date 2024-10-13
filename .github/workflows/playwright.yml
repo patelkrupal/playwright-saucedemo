@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions: # Add permissions to control GitHub Token access
+  contents: write # Allow writing to branches (required for gh-pages)
+
 jobs:
   run-playwright-tests:
     runs-on: ubuntu-latest
