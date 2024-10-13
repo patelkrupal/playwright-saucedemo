@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
 permissions: # Add permissions to control GitHub Token access
   contents: write # Allow writing to branches (required for gh-pages)
