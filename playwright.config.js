@@ -12,7 +12,7 @@ export const projects = [
 		use: {
 			browserName: `chromium`,
 			channel: `chrome`,
-			headless: false,
+			headless: true,
 			viewport: null,
 			screenshot: `only-on-failure`,
 			video: `retain-on-failure`,
