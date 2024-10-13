@@ -1,0 +1,7 @@
+/node_modules
+/.DS_Store
+/test-results
+/allure-report
+/allure-results
+/playwright-report
+results.xml
