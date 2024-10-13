@@ -55,10 +55,13 @@ jobs:
           path: allure-report
 
       - name: Publish Allure Report
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: allure-report
+          path: allure-report
 
       - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./playwright-saucedemo/allure-report
+          publish_dir: ./allure-report
